@@ -1,1 +1,19 @@
-<p>nav-bar works!</p>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+      </div>
+    </div>
+  </nav>
+  <br>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="userName" [(ngModel)]="searchTerm" name="searchTerm" (keyup)="search($event)"  placeholder="Search">
+          <button class="btn btn-primary me-md-2" type="button">Submit</button>
+        </form>
+      </div>
+    </nav>
+  <br>
+    
